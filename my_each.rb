@@ -3,9 +3,9 @@ def my_each(collection)
     i = 0 
     while i <= collection.length 
      new_collection << yield(collection[i])
+     
     i += 1 
-    when i > collection.length
-      raise "This block should not run!"
+    
 end 
 
 
