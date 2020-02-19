@@ -5,7 +5,7 @@ def my_each(collection)
      new_collection << yield(collection[i])
     i += 1 
     when i > collection.length
-      
+      raise "This block should not run!"
 end 
 
 
